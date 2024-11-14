@@ -1,5 +1,7 @@
 # TCP Project
-Proyecto en el que se implementa un Servidor TCP y un cliente TCP
+Proyecto en el que se implementa un Servidor TCP y un cliente TCP.
+
+[![Static Badge](https://img.shields.io/badge/python-v3.13-blue)](https://www.python.org/downloads/)
 
 ## Estructura del Proyecto
 - `src/server/server.py`: Contiene el código del servidor TCP.
@@ -8,7 +10,7 @@ Proyecto en el que se implementa un Servidor TCP y un cliente TCP
 ## Instrucciones de Ejecución
 
 ### Ejecutar el Servidor
-1. Abre una terminal y navega a la carpeta `TCP_Server/src/server` de tu projecto:
+1. Abre una terminal y navega a la carpeta `src/server` de tu projecto:
     ```bash
    cd src/server
    
@@ -17,7 +19,7 @@ Proyecto en el que se implementa un Servidor TCP y un cliente TCP
     python server.py
     
 ### Ejecutar el Cliente
-1. Abre una nueva terminal y navega a la carpeta `TCP_Server/src/client` de tu projecto:
+1. Abre una nueva terminal y navega a la carpeta `src/server` de tu projecto:
     ```bash
    cd src/server
    
@@ -34,6 +36,10 @@ Deben de estar iniciados ambos servidores para realizar las pruebas
 
 ### Prueba 2: Enviar el mensaje "DESCONEXION"
 1. En el cliente, ingresa el mensaje "DESCONEXION".
-2. Verifica que el cliente muestre "Cerrando conexión con el servidor..." y finalice.
-3. Verifica que el servidor muestre "Desconectando al cliente..." y continúe esperando nuevas conexiones.
+2. Verifica que el cliente muestre "Cerrando conexión..." y finalice.
+3. Verifica que el servidor muestre "Cliente desconectado" y continúe esperando nuevas conexiones.
 
+### Prueba 3: Enviar el mensaje "APAGAR SERVIDOR"
+1. En el cliente, ingresa el mensaje "APAGAR SERVIDOR".
+2. Verifica que el cliente muestre "Cerrando conexión ...", Reciba una respuesta del servidor que muestre "SERVIDOR APAGADO" y finalice.
+3. Verifica que el servidor muestre "Apagando el servidor..." y finalice.
